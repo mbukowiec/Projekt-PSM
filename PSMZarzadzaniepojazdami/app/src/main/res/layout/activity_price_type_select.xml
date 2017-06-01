@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pl.bukowiecmateusz.psmzp.PriceTypeSelect">
+
+    <Button
+        android:id="@+id/gotoPb"
+        android:layout_width="160dp"
+        android:layout_height="90dp"
+        android:text="Pb95"
+        android:textSize="24sp"
+        android:onClick="openPbPriceTab"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/gotoOn"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/gotoOn"
+        android:layout_width="160dp"
+        android:layout_height="90dp"
+        android:text="ON"
+        android:textSize="24sp"
+        android:onClick="openOnPriceTab"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/gotoLPG"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="17dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/gotoLPG"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:text="LPG"
+        android:textSize="24sp"
+        android:onClick="openLpgPriceTab"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/gotoOn"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="118dp"
+        app:layout_constraintLeft_toLeftOf="@+id/gotoOn" />
+</android.support.constraint.ConstraintLayout>

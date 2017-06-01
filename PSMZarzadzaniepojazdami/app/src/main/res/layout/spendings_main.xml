@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <ListView
+        android:layout_width="fill_parent"
+        android:id="@+id/lvSpendings"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Spendings_Opis"
+        android:hint="@string/edittext_hint_opis"
+        android:visibility="gone">
+        <requestFocus/>
+    </EditText>
+
+    <EditText
+        android:id="@+id/Spendings_Cena"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/edittext_hint_cena"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/NewSpendingButtons"
+        android:visibility="gone">
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/Spending_Zapisz"
+            android:text="@string/spending_zapisz"/>
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/Spending_Anuluj"
+            android:text="@string/spending_anuluj"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/SpendingControlButtons">
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/Spending_Dodaj"
+            android:text="@string/spending_dodaj"
+            android:layout_width="fill_parent"/>
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/Spending_Usun"
+            android:text="@string/spending_usun"
+            android:layout_width="fill_parent"/>
+    </LinearLayout>
+</LinearLayout>

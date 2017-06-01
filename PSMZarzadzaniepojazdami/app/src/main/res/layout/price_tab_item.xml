@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/stacjaOpis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stacja: " />
+
+    <TextView
+        android:id="@+id/stacja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/stacjaOpis"
+        android:text="#"/>
+
+    <TextView
+        android:id="@+id/pbOpis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cena Pb95: "
+        android:layout_alignBaseline="@+id/pb"
+        android:layout_alignBottom="@+id/pb"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/pb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="#"
+        android:layout_below="@+id/stacja"
+        android:layout_toRightOf="@+id/pbOpis"
+        android:layout_toEndOf="@+id/pbOpis"
+        android:layout_marginTop="17dp" />
+
+    <TextView
+        android:id="@+id/onOpis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cena ON: "
+        android:layout_below="@+id/pbOpis"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/on"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="#"
+        android:layout_below="@+id/pbOpis"
+        android:layout_toRightOf="@+id/onOpis"
+        android:layout_toEndOf="@+id/onOpis" />
+
+    <TextView
+        android:id="@+id/lpgOpis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/onOpis"
+        android:text="Cena LPG: " />
+
+    <TextView
+        android:id="@+id/lpg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/on"
+        android:layout_toEndOf="@+id/on"
+        android:layout_toRightOf="@+id/on"
+        android:text="#" />
+
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <ListView
+        android:layout_width="fill_parent"
+        android:id="@+id/lvCars"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+    <EditText
+        android:id="@+id/numerRejestracyjny"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Wprowadź numer rejestracyjny ..."
+        android:visibility="gone">
+
+        <requestFocus/>
+    </EditText>
+
+    <EditText
+        android:id="@+id/marka"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Wprowadź markę pojazdu ..."
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/ubezpieczenie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Wprowadź datę ubezpieczenia ..."
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/przeglad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Wprowadź datę przeglądu ..."
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/newCarButtons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/zapisz"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Zapisz" />
+
+        <Button
+            android:id="@+id/anuluj"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Anuluj" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addDelButtons">
+
+        <Button
+            android:id="@+id/dodajPojazd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Dodaj pojazd"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/usunZaznaczone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Usuń zaznaczone"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+</LinearLayout>

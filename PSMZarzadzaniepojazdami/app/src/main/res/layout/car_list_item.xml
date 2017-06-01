@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/CarListItem"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="6dip" >
+
+    <TextView
+        android:id="@+id/typeRejestracja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/textRejestracja"
+        android:layout_toRightOf="@+id/textRejestracja"
+        android:text="#nrrejestracyjny"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="18sp"></TextView>
+
+    <TextView
+        android:id="@+id/textRejestracja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Numer rejestracyjny: "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textMarka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textRejestracja"
+        android:layout_below="@+id/textRejestracja"
+        android:text="Marka: "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textUbezpieczenie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textMarka"
+        android:layout_below="@+id/textMarka"
+        android:text="Termin ubezpieczenia: "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textPrzeglad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textUbezpieczenie"
+        android:layout_below="@+id/textUbezpieczenie"
+        android:text="Termin przeglądu: "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/typeMarka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textUbezpieczenie"
+        android:layout_toEndOf="@+id/textMarka"
+        android:layout_toRightOf="@+id/textMarka"
+        android:text="#marka"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/typeUbezpieczenie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textUbezpieczenie"
+        android:layout_toEndOf="@+id/textUbezpieczenie"
+        android:layout_toRightOf="@+id/textUbezpieczenie"
+        android:text="#ubezpieczenie"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/typePrzeglad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textUbezpieczenie"
+        android:layout_toEndOf="@+id/textPrzeglad"
+        android:layout_toRightOf="@+id/textPrzeglad"
+        android:text="#przeglad"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textSize="18sp" />
+
+</RelativeLayout>

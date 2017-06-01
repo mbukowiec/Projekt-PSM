@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pl.bukowiecmateusz.psmzp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="PSM Zarzadzanie Pojazdami"
+        android:roundIcon="@mipmap/app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainMenu"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Info"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PriceCitySelect"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Podsumowanie" />
+        <activity android:name=".PriceTypeSelect" />
+        <activity android:name=".PbPriceTab" />
+        <activity android:name=".OnPriceTab" />
+        <activity android:name=".LpgPriceTab" />
+        <activity android:name=".SpendingsActivity"></activity>
+    </application>
+
+</manifest>

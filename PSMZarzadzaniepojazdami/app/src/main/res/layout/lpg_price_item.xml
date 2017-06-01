@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/stacjaOpis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stacja: " />
+
+    <TextView
+        android:id="@+id/stacja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/stacjaOpis"
+        android:text="#"/>
+
+    <TextView
+        android:id="@+id/lpgOpis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cena LPG: "
+        android:layout_below="@+id/stacjaOpis"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="19dp" />
+
+    <TextView
+        android:id="@+id/lpg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="#"
+        android:layout_alignBaseline="@+id/lpgOpis"
+        android:layout_alignBottom="@+id/lpgOpis"
+        android:layout_toRightOf="@+id/lpgOpis"
+        android:layout_toEndOf="@+id/lpgOpis" />
+
+</RelativeLayout>

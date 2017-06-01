@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:id="@+id/spendingListItem"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spending_item_opis"
+        android:text="#opis"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="12dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/tvOpis"
+        android:layout_marginLeft="11dp" />
+
+    <TextView
+        android:id="@+id/spending_item_cena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="#cena"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginStart="13dp"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/spending_item_opis"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toRightOf="@+id/tvCena"
+        android:layout_marginLeft="13dp" />
+
+    <TextView
+        android:id="@+id/tvOpis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Opis:"
+        android:textSize="18sp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/spending_item_opis"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp" />
+
+    <TextView
+        android:id="@+id/tvCena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Cena (w zł):"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/spending_item_cena"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp" />
+
+
+</android.support.constraint.ConstraintLayout>
